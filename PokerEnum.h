@@ -1,5 +1,5 @@
-#ifndef __POKERENUM_H
-#define __POKERENUM_H
+#ifndef POKERENUM_H_
+#define POKERENUM_H_
 
 enum PokerSuit
 {
@@ -9,7 +9,7 @@ enum PokerSuit
 	PokerSuit_Clubs,
 	PokerSuit_Spades,
 	PokerSuit_MAX
-}
+};
 
 enum PokerPoint
 {
@@ -28,6 +28,6 @@ enum PokerPoint
 	PokerPoint_J,
 	PokerPoint_Q,
 	PokerPoint_K,
-}
+};
 
 #endif
