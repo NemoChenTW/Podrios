@@ -17,4 +17,3 @@ CardDeck::~CardDeck()
 {
 	// TODO Auto-generated destructor stub
 }
-
