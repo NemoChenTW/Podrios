@@ -1,19 +1,20 @@
 /*
- * CardDeck.cpp
+ * GameType.cpp
  *
  *  Created on: 2014年10月25日
  *      Author: nemo
  */
 
-#include "CardDeck.h"
+#include "GameType.h"
 
-CardDeck::CardDeck()
+GameType::GameType()
 {
 	// TODO Auto-generated constructor stub
 
 }
 
-CardDeck::~CardDeck()
+GameType::~GameType()
 {
 	// TODO Auto-generated destructor stub
 }
+

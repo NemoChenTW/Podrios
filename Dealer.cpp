@@ -1,19 +1,20 @@
 /*
- * CardDeck.cpp
+ * Dealer.cpp
  *
  *  Created on: 2014年10月25日
  *      Author: nemo
  */
 
-#include "CardDeck.h"
+#include "Dealer.h"
 
-CardDeck::CardDeck()
+Dealer::Dealer()
 {
 	// TODO Auto-generated constructor stub
 
 }
 
-CardDeck::~CardDeck()
+Dealer::~Dealer()
 {
 	// TODO Auto-generated destructor stub
 }
+

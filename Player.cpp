@@ -1,19 +1,20 @@
 /*
- * CardDeck.cpp
+ * Player.cpp
  *
  *  Created on: 2014年10月25日
  *      Author: nemo
  */
 
-#include "CardDeck.h"
+#include "Player.h"
 
-CardDeck::CardDeck()
+Player::Player()
 {
 	// TODO Auto-generated constructor stub
 
 }
 
-CardDeck::~CardDeck()
+Player::~Player()
 {
 	// TODO Auto-generated destructor stub
 }
+
