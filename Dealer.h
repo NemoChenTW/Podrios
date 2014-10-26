@@ -8,7 +8,7 @@
 #ifndef DEALER_H_
 #define DEALER_H_
 
-#include <CardDeck.h>
+#include "CardDeck.h"
 
 #include <list>
 
