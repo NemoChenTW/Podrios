@@ -9,7 +9,7 @@
 #define DEALER_H_
 
 #include "CardDeck.h"
-
+#include "stddef.h"
 #include <list>
 
 class GamblingTable;
