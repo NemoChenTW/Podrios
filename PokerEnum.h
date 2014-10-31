@@ -16,7 +16,6 @@ enum PokerPoint
 {
 	PokerPoint_0,
 	PokerPoint_A,
-	PokerPoint_1,
 	PokerPoint_2,
 	PokerPoint_3,
 	PokerPoint_4,
