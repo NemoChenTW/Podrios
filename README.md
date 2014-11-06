@@ -1,4 +1,4 @@
-Podrios
+PodriosCPP
 =======
 
-A poker game practice project
+A poker game practice project with C++
