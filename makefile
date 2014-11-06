@@ -1,10 +1,5 @@
-EXE = runPodrios
-
-#DIR = Common/ Common/Types/ Common/Utility/ Common/Instruction/ Common/Provider/ \
-#      CollectionLogical/ GateController/ GateEMM/ MiLog/ \
-#      MMIManager/ PaidReader/ PassengerLogical/ \
-#      ReaderControl/ ReaderControl/FEP/ ReaderControl/Reader/ ReaderControl/Ticket/ \
-#      SPSInterface/ TagReader/ UnPaidReader/ ParametersManager/
+PROJECTDIR = $(shell pwd)
+EXE = $(notdir $(basename $(PROJECTDIR)))
 
 DIR = ./
 
