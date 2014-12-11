@@ -1,5 +1,9 @@
+ifdef PROJECTNAME
+EXE = $(PROJECTNAME)
+else
 PROJECTDIR = $(shell pwd)
 EXE = $(notdir $(basename $(PROJECTDIR)))
+endif
 
 DIR = ./ GameTable/ GameTools/CardDeck/ GameTypes/
 
