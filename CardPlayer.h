@@ -9,7 +9,7 @@
 #define CARDPLAYER_H_
 
 #include "Player.h"
-#include "Card.h"
+#include "GameTools/CardDeck/Card.h"
 
 #include <list>
 

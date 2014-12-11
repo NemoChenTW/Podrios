@@ -9,7 +9,16 @@
 #define POKERGAME_H_
 
 #include "GameType.h"
-#include "PokerEnum.h"
+// #include "PokerEnum.h"
+
+
+enum PokerGameType
+{
+	PokerGameType_0,
+	PokerGameType_BigDeuce,
+
+	PokerGameType_MAX
+};
 
 class PokerGame: public GameType {
 public:
@@ -21,6 +30,7 @@ public:
 	unsigned int numberOfMinPlayers() 	{return _numberOfMinPlayers;};
 	unsigned int numberOfMaxPlayers() 	{return _numberOfMaxPlayers;};
 	unsigned int numberOfInitialCards()	{return _numberOfInitialCards;};
+	
 
 private:
 

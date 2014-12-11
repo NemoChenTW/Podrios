@@ -6,11 +6,11 @@
  */
 
 #include "GamblingTable.h"
-
+#include <iostream>
+using namespace std;
 GamblingTable::GamblingTable()
 {
-	// TODO Auto-generated constructor stub
-
+	cout << "Construct GamblingTable." << endl;
 }
 
 GamblingTable::~GamblingTable()

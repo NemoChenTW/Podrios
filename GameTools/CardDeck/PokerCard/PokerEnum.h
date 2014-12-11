@@ -32,12 +32,4 @@ enum PokerPoint
 	PokerPoint_MAX
 };
 
-enum PokerGameType
-{
-	PokerGameType_0,
-	PokerGameType_BigDeuce,
-
-	PokerGameType_MAX
-};
-
 #endif

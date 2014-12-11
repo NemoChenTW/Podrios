@@ -1,12 +1,12 @@
 PROJECTDIR = $(shell pwd)
 EXE = $(notdir $(basename $(PROJECTDIR)))
 
-DIR = ./
+DIR = ./ GameTable/ GameTools/CardDeck/ GameTypes/
 
 SOURCE = *.cpp
 SOURCELOCATION = $(DIR:/=/$(SOURCE))
 
-INCLUDEPATH = 
+INCLUDEPATH = -I./
 INCLUDEFILE = 
 
 LIB =  

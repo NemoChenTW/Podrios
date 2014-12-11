@@ -9,7 +9,7 @@
 #define GAMBLINGTABLE_H_
 
 #include "Dealer.h"
-#include "CardDeck.h"
+#include "GameTools/CardDeck/CardDeck.h"
 
 class GamblingTable {
 public:

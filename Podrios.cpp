@@ -5,6 +5,7 @@
  *      Author: nemo
  */
 
+#include "GameTable/GamblingTable.h"
 #include <iostream>
 
 using namespace std;
@@ -12,7 +13,11 @@ using namespace std;
 
 int main()
 {
-	cout << "Show Message." << endl;
+	cout << "Start Podrios." << endl;
+	
+	GamblingTable *gamblingTable_Ptr = new GamblingTable();
+	
+	
 
 	return 0;
 }
