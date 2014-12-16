@@ -8,11 +8,12 @@
 #ifndef CARDDECK_H_
 #define CARDDECK_H_
 
+#include "GameTools/GameTool.h"
 #include "Card.h"
 
 #include <list>
 
-class CardDeck {
+class CardDeck :public GameTool{
 public:
 	CardDeck();
 	virtual ~CardDeck();

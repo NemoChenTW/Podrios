@@ -8,7 +8,7 @@
 #ifndef POKERCARD_H_
 #define POKERCARD_H_
 
-#include "Card.h"
+#include "GameTools/CardDeck/Card.h"
 #include "PokerEnum.h"
 
 class PokerCard: public Card {
