@@ -8,7 +8,8 @@ endif
 DIR = src/ \
         src/GameTable/ \
         src/GameTools/CardDeck/ \
-        src/GameTypes/
+        src/GameTypes/ \
+        src/Player
 
 SOURCE = *.cpp
 SOURCELOCATION = $(DIR:/=/$(SOURCE))
