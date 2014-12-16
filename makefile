@@ -7,6 +7,7 @@ endif
 
 DIR = src/ \
         src/GameTable/ \
+        src/GameTools/ \
         src/GameTools/CardDeck/ \
         src/GameTypes/ \
         src/Player
