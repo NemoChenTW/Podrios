@@ -14,13 +14,17 @@
 	[
 		{
 			"name": "PodriosCPP",
-			"shell_cmd": "cd ~/git/PodriosCPP; make;"
+			"shell_cmd": "cd ~/git/$project_base_name; make;"
 
 		        	,"variants":
 			[
 				{
 					"name": "Run",
-					"shell_cmd": "cd ~/git/PodriosCPP; make; echo; ./PodriosCPP",
+					"shell_cmd": "cd ~/git/$project_base_name; make; echo; ./$project_base_name",
+				},
+				{
+					"name": "Clean",
+					"shell_cmd": "cd ~/git/$project_base_name; make cleanall;",
 				}
 			]
    		 }
