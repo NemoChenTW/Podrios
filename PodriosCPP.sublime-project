@@ -1,0 +1,29 @@
+/**
+	PodriosCPP sublime project file.
+	Put this file under "~/.config/sublime-text-3/Packages/User/"
+*/
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "~/git/PodriosCPP"
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name": "PodriosCPP",
+			"shell_cmd": "cd ~/git/PodriosCPP; make;"
+
+		        	,"variants":
+			[
+				{
+					"name": "Run",
+					"shell_cmd": "cd ~/git/PodriosCPP; make; echo; ./PodriosCPP",
+				}
+			]
+   		 }
+	]
+
+}
