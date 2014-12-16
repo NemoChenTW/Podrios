@@ -9,19 +9,16 @@
 #define GAMBLINGTABLE_H_
 
 #include "Dealer.h"
-#include "GameTools/CardDeck/CardDeck.h"
+#include "GameTools/GameTool.h"
 
 class GamblingTable {
 public:
 	GamblingTable();
 	virtual ~GamblingTable();
 
-	//	Generate new card deck.
-	CardDeck* newCardDeck();
-
 private:
 	Dealer* _dealer;
-	std::list <CardDeck*> _cardDeck;
+	std::list <GameTool*> _gameTools;
 };
 
 #endif /* GAMBLINGTABLE_H_ */
