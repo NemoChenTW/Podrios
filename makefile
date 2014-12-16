@@ -26,7 +26,7 @@ CCFLAG = -g -c
 
 OBJS = $(SOURCE:.cpp=.o)
 
-CC = g++ -w
+CC = g++ -w -std=c++11
 
 
 all: $(EXE)
