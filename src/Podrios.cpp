@@ -15,8 +15,7 @@ int main()
 {
 	cout << "Start Podrios." << endl;
 	
-	GamblingTable *gamblingTable_Ptr = new GamblingTable();
-	
+	GamblingTable gamblingTable;
 	
 
 	return 0;
