@@ -10,6 +10,7 @@
 
 #include "GameType.h"
 // #include "PokerEnum.h"
+#include "GameTools/CardDeck/CardDeck.h"
 
 
 enum PokerGameType
@@ -24,6 +25,9 @@ class PokerGame: public GameType {
 public:
 	PokerGame(PokerGameType pokerGameType);
 	virtual ~PokerGame();
+
+	///		Initial the game tool "CardDeck"
+	void initialGameTool(GameTool *cardDeck);
 
 	PokerGameType pokerGameType() {return _pokerGameType;};
 

@@ -19,6 +19,13 @@ PokerGame::~PokerGame()
 	// TODO Auto-generated destructor stub
 }
 
+///		Initial the game tool "CardDeck"
+void PokerGame::initialGameTool(GameTool *cardDeck)
+{
+	cardDeck = new CardDeck();
+	//TODO 發牌
+}
+
 /**
  * 	@brief		Set the game rule according to the _pokerGameType
  */

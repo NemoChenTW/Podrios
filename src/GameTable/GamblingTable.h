@@ -18,6 +18,10 @@ public:
 	GamblingTable();
 	virtual ~GamblingTable();
 
+
+	///		Construct and initial the game tool.
+	void initialGameTool();
+
 private:
 	Dealer* _dealer;
 	PokerGame *pokerGame;
