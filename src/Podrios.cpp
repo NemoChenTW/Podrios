@@ -17,6 +17,7 @@ int main()
 	
 	GamblingTable gamblingTable;
 	
+	gamblingTable.initialGameTool();
 
 	return 0;
 }
