@@ -11,6 +11,8 @@ using namespace std;
 GamblingTable::GamblingTable()
 {
 	cout << "Construct GamblingTable." << endl;
+
+	pokerGame = new PokerGame(PokerGameType_BigDeuce);
 }
 
 GamblingTable::~GamblingTable()

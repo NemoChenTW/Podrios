@@ -11,6 +11,8 @@
 #include "Dealer.h"
 #include "GameTools/GameTool.h"
 
+#include "GameTypes/PokerGame.h"
+
 class GamblingTable {
 public:
 	GamblingTable();
@@ -18,6 +20,7 @@ public:
 
 private:
 	Dealer* _dealer;
+	PokerGame *pokerGame;
 	std::list <GameTool*> _gameTools;
 };
 
