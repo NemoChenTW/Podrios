@@ -6,12 +6,14 @@
  */
 
 #include "PokerGame.h"
+#include <iostream>
 
 PokerGame::PokerGame(PokerGameType pokerGameType)
 :_pokerGameType(pokerGameType)
 {
-	setGameRule();
+	std::cout << "Construct PokerGame." << std::endl;
 
+	setGameRule();
 }
 
 PokerGame::~PokerGame()
@@ -31,6 +33,7 @@ void PokerGame::initialGameTool(GameTool *cardDeck)
  */
 void PokerGame::setGameRule()
 {
+	std::cout << "Set game as PokerGame BigDeuce." << std::endl;
 	if(_pokerGameType == PokerGameType_BigDeuce)
 	{
 		setBigDeuceGameRule();
@@ -43,6 +46,7 @@ void PokerGame::setGameRule()
  */
 void PokerGame::setBigDeuceGameRule()
 {
+	std::cout << "Set BigDeuce game rule." << std::endl;
 	_numberOfMinPlayers = 2;
 	_numberOfMaxPlayers = 4;
 	_numberOfInitialCards = 13;

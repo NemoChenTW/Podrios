@@ -7,9 +7,11 @@
 
 #include "CardDeck.h"
 
+#include <iostream>
+
 CardDeck::CardDeck()
 {
-	// TODO Auto-generated constructor stub
+	std::cout << "Construct CardDeck." << std::endl;
 
 }
 
