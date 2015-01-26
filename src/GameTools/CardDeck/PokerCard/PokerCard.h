@@ -14,20 +14,20 @@
 class PokerCard: public Card {
 public:
 	PokerCard();
-	PokerCard(PokerSuit suit, PokerPoint point);
+	PokerCard(Poker::Suit suit, Poker::Point point);
 	virtual ~PokerCard();
 
 	// ===== Setter & Getter =====
-	void setSuit(PokerSuit suit) {_suit = suit;};
-	void setPoint(PokerPoint point) {_point = point;};
+	void setSuit(Poker::Suit suit) {_suit = suit;};
+	void setPoint(Poker::Point point) {_point = point;};
 
-	PokerSuit suit(){return _suit;};
-	PokerPoint point() {return _point;};
+	Poker::Suit suit(){return _suit;};
+	Poker::Point point() {return _point;};
 	// ===== Setter & Getter =====
 
 private:
-	PokerSuit 		_suit = PokerSuit_0;
-	PokerPoint 		_point = PokerPoint_0;
+	Poker::Suit 	_suit;
+	Poker::Point 	_point;
 
 
 };

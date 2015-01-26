@@ -1,35 +1,36 @@
 #ifndef POKERENUM_H_
 #define POKERENUM_H_
-
-enum PokerSuit
+namespace Poker
 {
-	PokerSuit_0,
-	PokerSuit_Clubs,
-	PokerSuit_Diamonds,
-	PokerSuit_Hearts,
-	PokerSuit_Spades,
+	enum class Suit
+	{
+		Nil,
+		Clubs,
+		Diamonds,
+		Hearts,
+		Spades,
 
-	PokerSuit_MAX
-};
+		MAX
+	};
 
-enum PokerPoint
-{
-	PokerPoint_0,
-	PokerPoint_A,
-	PokerPoint_2,
-	PokerPoint_3,
-	PokerPoint_4,
-	PokerPoint_5,
-	PokerPoint_6,
-	PokerPoint_7,
-	PokerPoint_8,
-	PokerPoint_9,
-	PokerPoint_10,
-	PokerPoint_J,
-	PokerPoint_Q,
-	PokerPoint_K,
+	enum class Point
+	{
+		Nil,
+		Ace,
+		Deuce,
+		Three,
+		Four,
+		Five,
+		Six,
+		Seven,
+		Eight,
+		Nine,
+		Ten,
+		Jack,
+		Queen,
+		King,
 
-	PokerPoint_MAX
-};
-
+		MAX
+	};
+}
 #endif

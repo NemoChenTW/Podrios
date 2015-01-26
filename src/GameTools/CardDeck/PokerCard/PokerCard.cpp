@@ -8,12 +8,12 @@
 #include "PokerCard.h"
 
 PokerCard::PokerCard()
-:_suit(PokerSuit_0), _point(PokerPoint_0)
+:_suit(Poker::Suit::Nil), _point(Poker::Point::Nil)
 {
 
 }
 
-PokerCard::PokerCard(PokerSuit suit, PokerPoint point)
+PokerCard::PokerCard(Poker::Suit suit, Poker::Point point)
 :_suit(suit), _point(point)
 {
 
