@@ -8,6 +8,8 @@
 #include "PokerGame.h"
 #include <iostream>
 
+#include "GameTools/CardDeck/PokerCard/PokerCard.h"
+
 PokerGame::PokerGame(PokerGameType pokerGameType)
 :_pokerGameType(pokerGameType)
 {
@@ -26,6 +28,16 @@ void PokerGame::initialGameTool(GameTool *cardDeck)
 {
 	cardDeck = new CardDeck();
 	//TODO 發牌
+}
+
+/**
+ * @brief	Generate Poker cards and put them into card deck.
+ *
+ * @param 	cardDeck	Card deck to store poker cards.
+ */
+void PokerGame::generatePokerCard(GameTool *cardDeck)
+{
+
 }
 
 /**

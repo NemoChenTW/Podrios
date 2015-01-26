@@ -38,6 +38,9 @@ public:
 
 private:
 
+	///		Generate Poker cards and put them into card deck.
+	void generatePokerCard(GameTool *cardDeck);
+
 	PokerGameType _pokerGameType;	///< The poker game type recognized.
 
 	unsigned int _numberOfMinPlayers 	= 0;		///< The minimal number of players.
