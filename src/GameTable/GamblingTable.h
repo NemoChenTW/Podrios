@@ -13,6 +13,8 @@
 
 #include "GameTypes/PokerGame.h"
 
+#include "Log/Log.h"
+
 class GamblingTable {
 public:
 	GamblingTable();

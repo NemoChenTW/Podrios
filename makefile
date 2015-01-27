@@ -6,11 +6,13 @@ EXE = $(notdir $(basename $(PROJECTDIR)))
 endif
 
 DIR = src/ \
-        src/GameTable/ \
+	src/Common/Utility/ \
+	src/GameTable/ \
         src/GameTools/ \
         src/GameTools/CardDeck/ \
         src/GameTypes/ \
-        src/Player
+        src/Log/MiLog/ \
+	src/Player
 
 SOURCE = *.cpp
 SOURCELOCATION = $(DIR:/=/$(SOURCE))
@@ -18,7 +20,7 @@ SOURCELOCATION = $(DIR:/=/$(SOURCE))
 INCLUDEPATH = -Isrc/
 INCLUDEFILE = 
 
-LIB =  
+LIB = -lpthread 
 LIBPATH = 
 
 SO = 

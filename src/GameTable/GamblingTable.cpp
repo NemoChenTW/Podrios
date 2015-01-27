@@ -10,7 +10,9 @@
 using namespace std;
 GamblingTable::GamblingTable()
 {
-	cout << "Construct GamblingTable." << endl;
+	MiLog::createInstance(TRACE, true);
+
+	LOG_TRACE("Construct GamblingTable.");
 
 	pokerGame = new PokerGame(PokerGameType_BigDeuce);
 }

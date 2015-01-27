@@ -10,7 +10,7 @@
 
 #include "GameTools/GameTool.h"
 #include "Card.h"
-
+#include "Log/Log.h"
 #include <list>
 
 class CardDeck :public GameTool{

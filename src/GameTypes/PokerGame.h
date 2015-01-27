@@ -12,6 +12,8 @@
 // #include "PokerEnum.h"
 #include "GameTools/CardDeck/CardDeck.h"
 
+#include "Log/Log.h"
+
 
 enum PokerGameType
 {

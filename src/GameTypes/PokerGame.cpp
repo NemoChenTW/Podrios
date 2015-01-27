@@ -13,7 +13,7 @@
 PokerGame::PokerGame(PokerGameType pokerGameType)
 :_pokerGameType(pokerGameType)
 {
-	std::cout << "Construct PokerGame." << std::endl;
+	LOG_TRACE("Construct PokerGame.");
 
 	setGameRule();
 }
@@ -45,7 +45,7 @@ void PokerGame::generatePokerCard(GameTool *cardDeck)
  */
 void PokerGame::setGameRule()
 {
-	std::cout << "Set game as PokerGame BigDeuce." << std::endl;
+	LOG_TRACE("Set game as PokerGame BigDeuce.");
 	if(_pokerGameType == PokerGameType_BigDeuce)
 	{
 		setBigDeuceGameRule();
@@ -58,7 +58,7 @@ void PokerGame::setGameRule()
  */
 void PokerGame::setBigDeuceGameRule()
 {
-	std::cout << "Set BigDeuce game rule." << std::endl;
+	LOG_TRACE("Set BigDeuce game rule.");
 	_numberOfMinPlayers = 2;
 	_numberOfMaxPlayers = 4;
 	_numberOfInitialCards = 13;

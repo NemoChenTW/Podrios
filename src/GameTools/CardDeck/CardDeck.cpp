@@ -11,7 +11,7 @@
 
 CardDeck::CardDeck()
 {
-	std::cout << "Construct CardDeck." << std::endl;
+	LOG_TRACE("Construct CardDeck.")
 
 }
 

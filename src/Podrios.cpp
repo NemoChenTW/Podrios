@@ -7,7 +7,7 @@
 
 #include "GameTable/GamblingTable.h"
 #include <iostream>
-
+#include <unistd.h>
 using namespace std;
 
 
@@ -18,6 +18,9 @@ int main()
 	GamblingTable gamblingTable;
 	
 	gamblingTable.initialGameTool();
+
+	while(true)
+		sleep(1);
 
 	return 0;
 }

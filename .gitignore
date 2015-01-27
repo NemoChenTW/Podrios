@@ -33,6 +33,8 @@
 .settings/
 /Debug/
 PodriosCPP
+/Log/
+/Podrios_LOG
 
 #Cloud9
 .c9
