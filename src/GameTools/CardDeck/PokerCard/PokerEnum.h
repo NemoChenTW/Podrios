@@ -13,6 +13,7 @@ namespace Poker
 		Last,
 		First=Clubs
 	};
+	const char* enum2str(Suit suit);
 
 	enum class Point
 	{
@@ -34,5 +35,6 @@ namespace Poker
 		Last,
 		First=Ace
 	};
+	const char* enum2str(Point point);
 }
 #endif
