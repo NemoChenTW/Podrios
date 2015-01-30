@@ -9,6 +9,11 @@
 
 namespace Poker
 {
+	Suit operator++(Suit& x) { return x = (Suit)(std::underlying_type<Suit>::type(x) + 1);}
+	Suit operator*(Suit c) {return c;}
+	Suit begin(Suit r) {return Suit::Clubs;}
+	Suit end(Suit r)   {return Suit::Last;}
+
 	const char* enum2str(Suit suit)
 	{
 		if(suit == Suit::Nil)
@@ -24,6 +29,11 @@ namespace Poker
 		else
 			return "Last";
 	}
+
+	Point operator++(Point& x) { return x = (Point)(std::underlying_type<Point>::type(x) + 1);}
+	Point operator*(Point c) {return c;}
+	Point begin(Point r) {return Point::Ace;}
+	Point end(Point r) {return Point::Last;}
 
 	const char* enum2str(Point point)
 	{
