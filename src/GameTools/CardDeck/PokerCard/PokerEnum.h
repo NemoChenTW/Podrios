@@ -10,7 +10,8 @@ namespace Poker
 		Hearts,
 		Spades,
 
-		MAX
+		Last,
+		First=Clubs
 	};
 
 	enum class Point
@@ -30,7 +31,8 @@ namespace Poker
 		Queen,
 		King,
 
-		MAX
+		Last,
+		First=Ace
 	};
 }
 #endif
