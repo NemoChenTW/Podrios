@@ -84,6 +84,7 @@ void MiLog::startThread() {
  *	no existing log file.
  */
 bool MiLog::openLogFile() {
+	FileUtils::createDir(PathUtils::LOG_DIR);
 	/*	Generate the Log File Name */
     FileUtils::createDir(PathUtils::PODRIOS_LOG_DIR);
 	string FileName = PathUtils::PODRIOS_LOG_DIR + TimeUtils::getTimeStrAsFileName() + ".log";
