@@ -27,6 +27,7 @@ PokerGame::~PokerGame()
 void PokerGame::initialGameTool(GameTool *cardDeck)
 {
 	cardDeck = new CardDeck();
+	generatePokerCard(cardDeck);
 	//TODO 發牌
 }
 
@@ -37,7 +38,14 @@ void PokerGame::initialGameTool(GameTool *cardDeck)
  */
 void PokerGame::generatePokerCard(GameTool *cardDeck)
 {
-
+	for(const auto &suit :Poker::Suit() )
+	{
+		for(const auto &point :Poker::Point() )
+		{
+			cout << Poker::enum2str(suit)
+			<< ", " << Poker::enum2str(point) << endl;
+		}
+	}
 }
 
 /**
