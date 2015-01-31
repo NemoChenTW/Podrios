@@ -11,7 +11,7 @@
 #include "GameTools/GameTool.h"
 #include "Card.h"
 #include "Log/Log.h"
-#include <list>
+#include <vector>
 
 class CardDeck :public GameTool{
 public:
@@ -26,7 +26,7 @@ public:
 
 private:
 
-	std::list <Card*> _card;	///< The point list for all the cards in the card deck
+	std::vector <Card*> _card;	///< The point vector for all the cards in the card deck
 
 	unsigned int _maxNumberOfCards;	///< The maximal number of the cards in the card deck
 
