@@ -18,6 +18,9 @@ public:
 	CardDeck();
 	virtual ~CardDeck();
 
+	///	Insert card into card deck.
+	void push_back(Card *card);
+
 	///	Return the number of the cards.
 	unsigned int num() {return _card.size();};
 

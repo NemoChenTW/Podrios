@@ -19,3 +19,14 @@ CardDeck::~CardDeck()
 {
 	// TODO Auto-generated destructor stub
 }
+
+///	Insert card into card deck.
+/**
+ * @brief	Insert card into card deck.
+ *
+ * @param 	card	Input card pointer.
+ */
+void CardDeck::push_back(Card *card)
+{
+	_card.push_back(card);
+}
