@@ -38,14 +38,18 @@ void PokerGame::initialGameTool(GameTool *cardDeck)
  */
 void PokerGame::generatePokerCard(GameTool *cardDeck)
 {
+	CardDeck *pokerCardDeck = (CardDeck*) cardDeck;
+
 	for(const auto &suit :Poker::Suit() )
 	{
 		for(const auto &point :Poker::Point() )
 		{
+			pokerCardDeck->push_back(new PokerCard(suit, point));
 			cout << Poker::enum2str(suit)
 			<< ", " << Poker::enum2str(point) << endl;
 		}
 	}
+
 }
 
 /**
