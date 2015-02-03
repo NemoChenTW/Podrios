@@ -18,6 +18,7 @@ SOURCE = *.cpp
 SOURCELOCATION = $(DIR:/=/$(SOURCE))
 
 INCLUDEPATH = -Isrc/
+
 INCLUDEFILE = 
 
 LIB = -lpthread 
@@ -30,8 +31,12 @@ CCFLAG = -g -c
 
 OBJS = $(SOURCE:.cpp=.o)
 
+#ifdef _LIBCPP_VERSION
 CC = g++ -w -std=c++11
-
+#else
+CC = clang++ -w -stdlib=libstdc++ -std=c++11
+#INCLUDEPATH += -I/Library/Developer/CommandLineTools/usr/include/c++/v1/
+#endif
 
 all: $(EXE)
 
