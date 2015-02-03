@@ -10,7 +10,8 @@ DIR = src/ \
 	src/GameTable/ \
         src/GameTools/ \
         src/GameTools/CardDeck/ \
-        src/GameTypes/ \
+        src/GameTools/CardDeck/PokerCard/ \
+	src/GameTypes/ \
         src/Log/MiLog/ \
 	src/Player
 
