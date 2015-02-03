@@ -32,9 +32,10 @@ CCFLAG = -g -c
 
 OBJS = $(SOURCE:.cpp=.o)
 
+OS := $(shell uname)
 ifeq ($(OS),Darwin)
 # Run MacOS commands 
-CC = clang++ -w -stdlib=libstdc++ -std=c++11
+CC = clang++ -w -std=c++11
 else
 # check for Linux and run other commands
 CC = g++ -w -std=c++11
