@@ -31,12 +31,15 @@ CCFLAG = -g -c
 
 OBJS = $(SOURCE:.cpp=.o)
 
-#ifdef _LIBCPP_VERSION
-CC = g++ -w -std=c++11
-#else
+ifeq ($(OS),Darwin)
+# Run MacOS commands 
 CC = clang++ -w -stdlib=libstdc++ -std=c++11
+else
+# check for Linux and run other commands
+CC = g++ -w -std=c++11
+endif
+
 #INCLUDEPATH += -I/Library/Developer/CommandLineTools/usr/include/c++/v1/
-#endif
 
 all: $(EXE)
 
