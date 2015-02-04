@@ -25,6 +25,9 @@ public:
 	///		Construct and initial the game tool.
 	void initialGameTool();
 
+	///		Player join the game.
+	int joinGame(Player* newPlayer);
+
 private:
 	Dealer* _dealer;
 	PokerGame *pokerGame;

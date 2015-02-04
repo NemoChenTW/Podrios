@@ -19,6 +19,15 @@ int main()
 	
 	gamblingTable.initialGameTool();
 
+
+	Player player_1, player_2, player_3, player_4, player_5;
+
+	gamblingTable.joinGame(&player_1);
+	gamblingTable.joinGame(&player_2);
+	gamblingTable.joinGame(&player_3);
+	gamblingTable.joinGame(&player_4);
+	gamblingTable.joinGame(&player_5);
+
 	while(true)
 		sleep(1);
 
