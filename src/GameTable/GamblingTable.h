@@ -12,6 +12,7 @@
 #include "GameTools/GameTool.h"
 
 #include "GameTypes/PokerGame.h"
+#include "Player/Player.h"
 
 #include "Log/Log.h"
 
@@ -28,6 +29,7 @@ private:
 	Dealer* _dealer;
 	PokerGame *pokerGame;
 	std::list <GameTool*> _gameTools;
+	std::list <Player* > _players;
 };
 
 #endif /* GAMBLINGTABLE_H_ */
