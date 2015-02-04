@@ -49,6 +49,7 @@ void PokerGame::generatePokerCard(GameTool *cardDeck)
 			<< ", " << Poker::enum2str(point) << endl;
 		}
 	}
+	cardDeck->show();
 
 }
 

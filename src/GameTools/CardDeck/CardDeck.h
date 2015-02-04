@@ -27,6 +27,9 @@ public:
 	///	Return the maximal number of the cards,
 	unsigned int maxNum() {return _maxNumberOfCards;};
 
+	///	Show all card in card deck.
+	void show();
+
 private:
 
 	std::vector <Card*> _card;	///< The point vector for all the cards in the card deck

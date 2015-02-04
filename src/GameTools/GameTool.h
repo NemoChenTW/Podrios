@@ -10,6 +10,9 @@ public:
 	GameTool(/* args */) = default;
 	GameTool(GameToolType gameToolType);
 
+	///	Show GameTool.
+	virtual void show();
+
 
 };
 

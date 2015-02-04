@@ -25,6 +25,9 @@ public:
 	Poker::Point point() {return _point;};
 	// ===== Setter & Getter =====
 
+	///	Show Poker card suit and point.
+	void show();
+
 private:
 	Poker::Suit 	_suit;
 	Poker::Point 	_point;

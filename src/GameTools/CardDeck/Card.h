@@ -13,6 +13,9 @@ public:
 	Card();
 	virtual ~Card();
 
+	///	Show card info.
+	virtual void show()=0;
+
 };
 
 #endif /* CARD_H_ */
