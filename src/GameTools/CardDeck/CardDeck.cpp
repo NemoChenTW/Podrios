@@ -34,9 +34,8 @@ void CardDeck::push_back(Card *card)
 ///	Show all card in card deck.
 void CardDeck::show()
 {
-	for(auto card :_card)
+	for(const auto card :_card)
 	{
 		card->show();
 	}
-
 }
