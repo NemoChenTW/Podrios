@@ -32,6 +32,19 @@ void PokerGame::initialGameTool(GameTool *cardDeck)
 }
 
 /**
+ * @brief	Shuffle poker card deck.
+ *
+ * @param 	cardDeck Input poker card deck.
+ */
+void PokerGame::shuffle(GameTool *cardDeck)
+{
+	CardDeck *pokerCardDeck = (CardDeck*) cardDeck;
+
+	//TODO Shuffle the poker card.
+
+}
+
+/**
  * @brief	Generate Poker cards and put them into card deck.
  *
  * @param 	cardDeck	Card deck to store poker cards.
@@ -50,7 +63,6 @@ void PokerGame::generatePokerCard(GameTool *cardDeck)
 		}
 	}
 	cardDeck->show();
-
 }
 
 /**

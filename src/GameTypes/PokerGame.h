@@ -37,6 +37,8 @@ public:
 	unsigned int numberOfMaxPlayers() 	{return _numberOfMaxPlayers;};
 	unsigned int numberOfInitialCards()	{return _numberOfInitialCards;};
 	
+	///	Shuffle poker card deck.
+	void shuffle(GameTool *cardDeck);
 
 private:
 
